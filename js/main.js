@@ -4,19 +4,19 @@
     function initialize() {
         var mapOptions = {
             zoom: 14,
-            center: new google.maps.LatLng(23.7893837, 90.38596079999999),
+            center: new google.maps.LatLng(55.91150, 37.58487),
             mapTypeId: google.maps.MapTypeId.ROADMAP
         };
 
         var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
         var marker = new google.maps.Marker({
-            position: new google.maps.LatLng(23.7893837, 90.38596079999999),
+            position: new google.maps.LatLng(55.91150, 37.58487),
         });
 
         marker.setMap(map);
         var infowindow = new google.maps.InfoWindow({
-            content: "Hello World!"
+            content: "Me parking!"
         });
 
         infowindow.open(map, marker);
